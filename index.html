@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accredited Investor Test | Current SEC Requirements</title>
+    <meta name="description" content="Take our accredited investor qualification test to understand if you meet current SEC requirements for accredited investor status." />
+  </head>
+  <body>
+    <!-- A hidden form that Netlify can detect -->
+    <form name="accredited-investor-contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <select name="investmentInterest"></select>
+      <select name="estimatedInvestment"></select>
+      <select name="timeframe"></select>
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
